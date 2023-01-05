@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-06T01:38:26 PKT" name="Default suite" finished-at="2023-01-06T01:41:41 PKT" duration-ms="195383">
+    <groups>
+    </groups>
+    <test started-at="2023-01-06T01:38:26 PKT" name="Default test" finished-at="2023-01-06T01:41:41 PKT" duration-ms="195383">
+      <class name="page.testcases.VdotokHomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:26 PKT" name="setup" finished-at="2023-01-06T01:38:29 PKT" duration-ms="2668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_docs()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:29 PKT" name="test_docs" finished-at="2023-01-06T01:38:45 PKT" duration-ms="16639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_docs -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:45 PKT" name="close" finished-at="2023-01-06T01:38:45 PKT" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:45 PKT" name="setup" finished-at="2023-01-06T01:38:47 PKT" duration-ms="1599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_usecase()[pri:1, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:47 PKT" name="test_usecase" finished-at="2023-01-06T01:39:04 PKT" duration-ms="17304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_usecase -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:04 PKT" name="close" finished-at="2023-01-06T01:39:04 PKT" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:04 PKT" name="setup" finished-at="2023-01-06T01:39:06 PKT" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_logo()[pri:2, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:06 PKT" name="test_logo" finished-at="2023-01-06T01:39:14 PKT" duration-ms="8314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_logo -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:14 PKT" name="close" finished-at="2023-01-06T01:39:15 PKT" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:15 PKT" name="setup" finished-at="2023-01-06T01:39:16 PKT" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_pricing()[pri:3, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:16 PKT" name="test_pricing" finished-at="2023-01-06T01:39:24 PKT" duration-ms="7789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_pricing -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:24 PKT" name="close" finished-at="2023-01-06T01:39:24 PKT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:24 PKT" name="setup" finished-at="2023-01-06T01:39:26 PKT" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_blogs()[pri:4, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:26 PKT" name="test_blogs" finished-at="2023-01-06T01:39:39 PKT" duration-ms="13740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_blogs -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:39 PKT" name="close" finished-at="2023-01-06T01:39:39 PKT" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:39 PKT" name="setup" finished-at="2023-01-06T01:39:41 PKT" duration-ms="1641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_loginbtn()[pri:5, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:41 PKT" name="test_loginbtn" finished-at="2023-01-06T01:39:51 PKT" duration-ms="9830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginbtn -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:51 PKT" name="close" finished-at="2023-01-06T01:39:51 PKT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:51 PKT" name="setup" finished-at="2023-01-06T01:39:53 PKT" duration-ms="1545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_try_hdr_btn()[pri:6, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:53 PKT" name="test_try_hdr_btn" finished-at="2023-01-06T01:40:04 PKT" duration-ms="11007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_try_hdr_btn -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:04 PKT" name="close" finished-at="2023-01-06T01:40:04 PKT" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:04 PKT" name="setup" finished-at="2023-01-06T01:40:06 PKT" duration-ms="1965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_image_section_txt()[pri:7, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:06 PKT" name="test_image_section_txt" finished-at="2023-01-06T01:40:15 PKT" duration-ms="9716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_image_section_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:15 PKT" name="close" finished-at="2023-01-06T01:40:16 PKT" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:16 PKT" name="setup" finished-at="2023-01-06T01:40:17 PKT" duration-ms="1530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_right_image()[pri:8, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:17 PKT" name="test_right_image" finished-at="2023-01-06T01:40:28 PKT" duration-ms="10862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_right_image -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:28 PKT" name="close" finished-at="2023-01-06T01:40:28 PKT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:28 PKT" name="setup" finished-at="2023-01-06T01:40:30 PKT" duration-ms="1514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_smooth_toggle()[pri:9, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:30 PKT" name="test_smooth_toggle" finished-at="2023-01-06T01:40:40 PKT" duration-ms="10236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_smooth_toggle -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:40 PKT" name="close" finished-at="2023-01-06T01:40:40 PKT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:40 PKT" name="setup" finished-at="2023-01-06T01:40:42 PKT" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_smooth_txt()[pri:10, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:42 PKT" name="test_smooth_txt" finished-at="2023-01-06T01:40:51 PKT" duration-ms="9039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_smooth_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:51 PKT" name="close" finished-at="2023-01-06T01:40:51 PKT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:51 PKT" name="setup" finished-at="2023-01-06T01:40:53 PKT" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_scalable_toggle()[pri:11, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:53 PKT" name="test_scalable_toggle" finished-at="2023-01-06T01:41:02 PKT" duration-ms="9236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_scalable_toggle -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:02 PKT" name="close" finished-at="2023-01-06T01:41:02 PKT" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:02 PKT" name="setup" finished-at="2023-01-06T01:41:04 PKT" duration-ms="1528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_scalable_txt()[pri:12, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:04 PKT" name="test_scalable_txt" finished-at="2023-01-06T01:41:16 PKT" duration-ms="12125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_scalable_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:16 PKT" name="close" finished-at="2023-01-06T01:41:16 PKT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:16 PKT" name="setup" finished-at="2023-01-06T01:41:17 PKT" duration-ms="1539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_secure_toggle()[pri:13, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:17 PKT" name="test_secure_toggle" finished-at="2023-01-06T01:41:29 PKT" duration-ms="11169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_secure_toggle -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:29 PKT" name="close" finished-at="2023-01-06T01:41:29 PKT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:29 PKT" name="setup" finished-at="2023-01-06T01:41:30 PKT" duration-ms="1559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_secure_txt()[pri:14, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:30 PKT" name="test_secure_txt" finished-at="2023-01-06T01:41:41 PKT" duration-ms="10838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_secure_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:41 PKT" name="close" finished-at="2023-01-06T01:41:41 PKT" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- page.testcases.VdotokHomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
