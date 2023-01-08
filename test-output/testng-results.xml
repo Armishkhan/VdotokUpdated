@@ -1,192 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-06T01:38:26 PKT" name="Default suite" finished-at="2023-01-06T01:41:41 PKT" duration-ms="195383">
+  <suite started-at="2023-01-08T20:06:19 PKT" name="Default suite" finished-at="2023-01-08T20:06:35 PKT" duration-ms="16078">
     <groups>
     </groups>
-    <test started-at="2023-01-06T01:38:26 PKT" name="Default test" finished-at="2023-01-06T01:41:41 PKT" duration-ms="195383">
+    <test started-at="2023-01-08T20:06:19 PKT" name="Default test" finished-at="2023-01-08T20:06:35 PKT" duration-ms="16078">
       <class name="page.testcases.VdotokHomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:26 PKT" name="setup" finished-at="2023-01-06T01:38:29 PKT" duration-ms="2668" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@4efac082]" started-at="2023-01-08T20:06:19 PKT" name="setup" finished-at="2023-01-08T20:06:21 PKT" duration-ms="2126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_docs()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:29 PKT" name="test_docs" finished-at="2023-01-06T01:38:45 PKT" duration-ms="16639" status="PASS">
+        <test-method signature="test_scrollable_btn1()[pri:0, instance:page.testcases.VdotokHomePageTest@4efac082]" started-at="2023-01-08T20:06:21 PKT" name="test_scrollable_btn1" finished-at="2023-01-08T20:06:35 PKT" duration-ms="13914" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (893, 7495)
+  (Session info: chrome=108.0.5359.124)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Norgics-MacBook-Pro.local', ip: 'fe80:0:0:0:14a5:4cb:a78e:57d5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [597953d0798c510e06addb39d6e6da29, clickElement {id=041dfc5a-26f9-4faa-95e2-db348c30b379}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/f8/w5xb0bt95wg...}, goog:chromeOptions: {debuggerAddress: localhost:60185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60185/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (597953d0798c510e06addb39d6e6da29)] -> xpath: //div[@id="root"]//div[@id="documentation"]//div[2]//div//ul[@class="splide__pagination splide__pagination--ltr"]//li[2]//button]
+Session ID: 597953d0798c510e06addb39d6e6da29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (893, 7495)
+  (Session info: chrome=108.0.5359.124)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Norgics-MacBook-Pro.local', ip: 'fe80:0:0:0:14a5:4cb:a78e:57d5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [597953d0798c510e06addb39d6e6da29, clickElement {id=041dfc5a-26f9-4faa-95e2-db348c30b379}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/f8/w5xb0bt95wg...}, goog:chromeOptions: {debuggerAddress: localhost:60185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60185/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (597953d0798c510e06addb39d6e6da29)] -> xpath: //div[@id="root"]//div[@id="documentation"]//div[2]//div//ul[@class="splide__pagination splide__pagination--ltr"]//li[2]//button]
+Session ID: 597953d0798c510e06addb39d6e6da29
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at page.Objects.VdotokHome.verify_scrollable_btn1(VdotokHome.java:1128)
+at page.testcases.VdotokHomePageTest.test_scrollable_btn1(VdotokHomePageTest.java:589)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_docs -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:45 PKT" name="close" finished-at="2023-01-06T01:38:45 PKT" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:45 PKT" name="setup" finished-at="2023-01-06T01:38:47 PKT" duration-ms="1599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_usecase()[pri:1, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:38:47 PKT" name="test_usecase" finished-at="2023-01-06T01:39:04 PKT" duration-ms="17304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_usecase -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:04 PKT" name="close" finished-at="2023-01-06T01:39:04 PKT" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:04 PKT" name="setup" finished-at="2023-01-06T01:39:06 PKT" duration-ms="1597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_logo()[pri:2, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:06 PKT" name="test_logo" finished-at="2023-01-06T01:39:14 PKT" duration-ms="8314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_logo -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:14 PKT" name="close" finished-at="2023-01-06T01:39:15 PKT" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:15 PKT" name="setup" finished-at="2023-01-06T01:39:16 PKT" duration-ms="1557" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_pricing()[pri:3, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:16 PKT" name="test_pricing" finished-at="2023-01-06T01:39:24 PKT" duration-ms="7789" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_pricing -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:24 PKT" name="close" finished-at="2023-01-06T01:39:24 PKT" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:24 PKT" name="setup" finished-at="2023-01-06T01:39:26 PKT" duration-ms="1524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_blogs()[pri:4, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:26 PKT" name="test_blogs" finished-at="2023-01-06T01:39:39 PKT" duration-ms="13740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_blogs -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:39 PKT" name="close" finished-at="2023-01-06T01:39:39 PKT" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:39 PKT" name="setup" finished-at="2023-01-06T01:39:41 PKT" duration-ms="1641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_loginbtn()[pri:5, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:41 PKT" name="test_loginbtn" finished-at="2023-01-06T01:39:51 PKT" duration-ms="9830" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_loginbtn -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:51 PKT" name="close" finished-at="2023-01-06T01:39:51 PKT" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:51 PKT" name="setup" finished-at="2023-01-06T01:39:53 PKT" duration-ms="1545" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_try_hdr_btn()[pri:6, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:39:53 PKT" name="test_try_hdr_btn" finished-at="2023-01-06T01:40:04 PKT" duration-ms="11007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_try_hdr_btn -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:04 PKT" name="close" finished-at="2023-01-06T01:40:04 PKT" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:04 PKT" name="setup" finished-at="2023-01-06T01:40:06 PKT" duration-ms="1965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_image_section_txt()[pri:7, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:06 PKT" name="test_image_section_txt" finished-at="2023-01-06T01:40:15 PKT" duration-ms="9716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_image_section_txt -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:15 PKT" name="close" finished-at="2023-01-06T01:40:16 PKT" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:16 PKT" name="setup" finished-at="2023-01-06T01:40:17 PKT" duration-ms="1530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_right_image()[pri:8, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:17 PKT" name="test_right_image" finished-at="2023-01-06T01:40:28 PKT" duration-ms="10862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_right_image -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:28 PKT" name="close" finished-at="2023-01-06T01:40:28 PKT" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:28 PKT" name="setup" finished-at="2023-01-06T01:40:30 PKT" duration-ms="1514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_smooth_toggle()[pri:9, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:30 PKT" name="test_smooth_toggle" finished-at="2023-01-06T01:40:40 PKT" duration-ms="10236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_smooth_toggle -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:40 PKT" name="close" finished-at="2023-01-06T01:40:40 PKT" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:40 PKT" name="setup" finished-at="2023-01-06T01:40:42 PKT" duration-ms="2118" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_smooth_txt()[pri:10, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:42 PKT" name="test_smooth_txt" finished-at="2023-01-06T01:40:51 PKT" duration-ms="9039" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_smooth_txt -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:51 PKT" name="close" finished-at="2023-01-06T01:40:51 PKT" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:51 PKT" name="setup" finished-at="2023-01-06T01:40:53 PKT" duration-ms="1560" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_scalable_toggle()[pri:11, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:40:53 PKT" name="test_scalable_toggle" finished-at="2023-01-06T01:41:02 PKT" duration-ms="9236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_scalable_toggle -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:02 PKT" name="close" finished-at="2023-01-06T01:41:02 PKT" duration-ms="158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:02 PKT" name="setup" finished-at="2023-01-06T01:41:04 PKT" duration-ms="1528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_scalable_txt()[pri:12, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:04 PKT" name="test_scalable_txt" finished-at="2023-01-06T01:41:16 PKT" duration-ms="12125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_scalable_txt -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:16 PKT" name="close" finished-at="2023-01-06T01:41:16 PKT" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:16 PKT" name="setup" finished-at="2023-01-06T01:41:17 PKT" duration-ms="1539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_secure_toggle()[pri:13, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:17 PKT" name="test_secure_toggle" finished-at="2023-01-06T01:41:29 PKT" duration-ms="11169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_secure_toggle -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:29 PKT" name="close" finished-at="2023-01-06T01:41:29 PKT" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:29 PKT" name="setup" finished-at="2023-01-06T01:41:30 PKT" duration-ms="1559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_secure_txt()[pri:14, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:30 PKT" name="test_secure_txt" finished-at="2023-01-06T01:41:41 PKT" duration-ms="10838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_secure_txt -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@942a29c]" started-at="2023-01-06T01:41:41 PKT" name="close" finished-at="2023-01-06T01:41:41 PKT" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
+        </test-method> <!-- test_scrollable_btn1 -->
       </class> <!-- page.testcases.VdotokHomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

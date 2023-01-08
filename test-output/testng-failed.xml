@@ -5,9 +5,8 @@
     <classes>
       <class name="page.testcases.VdotokHomePageTest">
         <methods>
-          <include name="close"/>
           <include name="setup"/>
-          <include name="test_docs"/>
+          <include name="test_scrollable_btn1"/>
         </methods>
       </class> <!-- page.testcases.VdotokHomePageTest -->
     </classes>
