@@ -1,33 +1,37 @@
 package page.Objects;
 
-import org.openqa.selenium.By;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import static org.testng.Assert.assertTrue;
-
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 
 public class VdotokHome {
-    
-	//protected WebDriver driver;
-
-	String driverPath = "/usr/local/bin/chromedriver";
+    	
 	WebDriver driver;
 	WebDriverWait wait; 
 	JavascriptExecutor js; 
-		
+	static Logger log = Logger.getLogger(VdotokHome.class.getName());  
+	public VdotokHome(WebDriver driver)
+	{
+
+        this.driver = driver;
+        PageFactory.initElements(driver, this); 
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        js = (JavascriptExecutor) driver;
+        Actions actions = new Actions(driver); 
+        driver.get("http://vdotok.com");
+         
+	}
+	
+	
 	//Header section
 	@FindBy(xpath="//img[@id=\"vdtbrandlogo\"]") WebElement header_logo;
 	@FindBy(xpath="//body//div[@id=\"vdtnavbar\"]//ul[1]//li[1]//a") WebElement usecases_option;
@@ -40,19 +44,9 @@ public class VdotokHome {
     @FindBy(xpath="//div[@id=\"withimg\"]//div//img[@src=\"/static/media/x-circle.8b9fa0f0dd9200eb5d33.webp\"]") WebElement cancel_login;
 	@FindBy(xpath="//body//div[@id=\"vdtnavbar\"]//div[2]//ul//li[2]//button") WebElement try_button;
 	
-	public VdotokHome(WebDriver driver){
-
-        this.driver = driver;
-        PageFactory.initElements(driver, this); 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        js = (JavascriptExecutor) driver;
-        Actions actions = new Actions(driver); 
-        driver.get("http://vdotok.com");
-         
-	}
 	
 	//Verify Title
-	public void verifyTitle()
+	public void verify_title()
 	{
 	     String ActualTitle = driver.getTitle();
 	     String ExpectedTitle = "VdoTok - Easy-to-use APIs for Live Media";
@@ -63,7 +57,8 @@ public class VdotokHome {
 	public void verify_logo()
 	{
 		boolean logoPresent = header_logo.isDisplayed();
-		Assert.assertTrue(logoPresent);		
+		Assert.assertTrue(logoPresent);	
+        log.info("first logs");
 	}
 	
 	//Click on UseCases Option
@@ -258,7 +253,8 @@ public class VdotokHome {
 		 Assert.assertEquals(actual_txt, "Why integrating live media with VdoTok?");
      }
      
-        
+    
+	
    //section1
  	@FindBy(xpath="//div[@class=\"sectionheading\"]//p[contains(text(),'1')]") WebElement yellow_dot_sec1;
  	@FindBy(xpath="//div[@class=\"sectionheading\"]//p[contains(text(),'Messaging is old...')]") WebElement yelllow_dot_sec1_txt;
@@ -326,7 +322,7 @@ public class VdotokHome {
 		Assert.assertEquals(actual_txt, "HOW DOES IT WORK");
  		work_btn_sec1.click();
  	}
- 	
+	
  	//section2
  	 	@FindBy(xpath="//div[@class=\"sectionheading\"]//p[contains(text(),'2')]") WebElement yellow_dot_sec2;
  	 	@FindBy(xpath="//div[@class=\"sectionheading\"]//p[contains(text(),'What we offer')]") WebElement yelllow_dot_sec2_txt;
@@ -954,6 +950,7 @@ public class VdotokHome {
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"trycomponent\"]//div[1]//p[2]") WebElement sec8_descriptive_txt;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"trycomponent\"]//div[1]//button") WebElement sec8_tryBtn;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"trycomponent\"]//div[2]//img") WebElement sec8_img;
+	//@FindBy(xpath="//div[@id=\"withimg\"]//div//img[@src=\"/static/media/x-circle.8b9fa0f0dd9200eb5d33.webp\"]") WebElement cancel_login;
 	
 	public void verify_sec8_txt()
 	{
@@ -1111,21 +1108,23 @@ public class VdotokHome {
 	}	
 	
 	//Test scrollable button
-	@FindBy(xpath="//div[@id=\"root\"]//div[@id=\"documentation\"]//div[2]//div//ul[@class=\"splide__pagination splide__pagination--ltr\"]//li[2]//button") WebElement blog_sec_yellowDot2;
+	@FindBy(xpath="//div[@id='splide05']/ul/li[2]/button") WebElement blog_sec_yellowDot2;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@id=\"documentation\"]//div[2]//div//div[2]//ul//li[10]//img") WebElement blog4_img;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@id=\"documentation\"]//div[2]//div//div[2]//ul//li[11]//img") WebElement blog5_img;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@id=\"documentation\"]//div[2]//div//div[2]//ul//li[12]//img") WebElement blog6_img;
 	
 	public void verify_scrollable_btn1()
 	{
+		js.executeScript("window.scrollBy(0,6800)");
 		Actions actions = new Actions(driver); 
 		actions.moveToElement(blog_sec_yellowDot2); 
-		   actions.click(); 
+		actions.click().perform(); 
+		//Log.info("clicking on the element");
 		//scroll.sendKeys(Keys.PAGE_DOWN);
 		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
  		//wait.until(ExpectedConditions.elementToBeClickable(blog_sec_yellowDot2));
- 		blog_sec_yellowDot2.click();
+ 		//blog_sec_yellowDot2.click();
  		
  		wait.until(ExpectedConditions.visibilityOf(blog4_img));
 		boolean Element_Present = blog4_img.isDisplayed();
@@ -1139,6 +1138,7 @@ public class VdotokHome {
 		boolean Elementt_Present = blog6_img.isDisplayed();
 		Assert.assertTrue(Elementt_Present);	
 	}
+	
 	//Test Blog4
 	//@FindBy(xpath="//div[@id=\"root\"]//div[@id=\"documentation\"]//div[2]//div//div[2]//ul//li[10]//img") WebElement blog4_img;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@id=\"documentation\"]//div[2]//div//div[2]//ul//li[10]//button") WebElement blog4_btn;
@@ -1303,7 +1303,7 @@ public class VdotokHome {
 	
 	public void verify_footer_vdotok_icon()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7300)");
 		wait.until(ExpectedConditions.visibilityOf(footer_vdotok_icon));
 		boolean Element_Present = footer_vdotok_icon.isDisplayed();
 		Assert.assertTrue(Element_Present);
@@ -1311,7 +1311,7 @@ public class VdotokHome {
 	
 	public void verify_footer_descriptive_txt()
 	{
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7300)");
 		wait.until(ExpectedConditions.visibilityOf(footer_descriptive_txt));
 		String actual_txt= footer_descriptive_txt.getText();
 		Assert.assertEquals(actual_txt, "Build powerful communication solutions for Live Shopping, MedTech, IoT & Social Networking");
@@ -1319,7 +1319,7 @@ public class VdotokHome {
 	
 	public void verify_footer_copyright_txt()
 	{
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7300)");
 		wait.until(ExpectedConditions.visibilityOf(footer_copyright_txt));
 		String actual_txt= footer_copyright_txt.getText();
 		Assert.assertEquals(actual_txt, "© 2023, VdoTok AB");
@@ -1331,10 +1331,11 @@ public class VdotokHome {
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div//div[@class=\"newfooterclass\"]//div[1]//div[2]//a[2]") WebElement footer_pricing_btn;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div//div[@class=\"newfooterclass\"]//div[1]//div[2]//a[3]") WebElement footer_documentation_btn;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div//div[@class=\"newfooterclass\"]//div[1]//div[2]//a[4]") WebElement footer_FAQ_btn;
+	//@FindBy(xpath="//div[@id=\"root\"]//div//div[@id=\"signup_container\"]//div[@id=\"modalmain-signup\"]//div[@id=\"navmodal-signup\"]//div[@class=\"login partition\"]//p[@class=\"heading-signin typekit_h3 webkit_primary_h\"]") WebElement signIn_title; 
 	
 	public void verify_footer_vdotok_txt()
 	{
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7300)");
 		wait.until(ExpectedConditions.visibilityOf(footer_vdotok_txt));
 		String actual_txt= footer_vdotok_txt.getText();
 		Assert.assertEquals(actual_txt, "This is VdoTok");
@@ -1342,13 +1343,15 @@ public class VdotokHome {
 	
 	public void verify_footer_beta_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		//js.executeScript("window.scrollBy(0,7300)");
+		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_beta_btn));
 		String actual_txt1= footer_beta_btn.getText();
 	    Assert.assertEquals(actual_txt1, "Try VdoTok Beta");
 	    footer_beta_btn.click();
 	    wait.until(ExpectedConditions.elementToBeClickable(signIn_title));
 		signIn_title.click();
+		
 			
 	}
 	
@@ -1356,7 +1359,7 @@ public class VdotokHome {
 
 	public void verify_footer_about_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_about_btn));
 		String actual_txt1= footer_about_btn.getText();
 	    Assert.assertEquals(actual_txt1, "About");
@@ -1369,7 +1372,7 @@ public class VdotokHome {
 	
 	public void verify_footer_pricing_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_pricing_btn));
 		String actual_txt1= footer_pricing_btn.getText();
 	    Assert.assertEquals(actual_txt1, "Pricing");
@@ -1382,7 +1385,7 @@ public class VdotokHome {
 	
 	public void verify_footer_documentation_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_documentation_btn));
 		String actual_txt1= footer_documentation_btn.getText();
 	    Assert.assertEquals(actual_txt1, "Documentation");
@@ -1398,7 +1401,7 @@ public class VdotokHome {
 	
 	public void verify_footer_FAQ_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_FAQ_btn));
 		String actual_txt1= footer_FAQ_btn.getText();
 	    Assert.assertEquals(actual_txt1, "FAQ");
@@ -1419,7 +1422,7 @@ public class VdotokHome {
 	
 	public void verify_footer_usecases_txt()
 	{
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.visibilityOf(footer_usecases_txt));
 		String actual_txt= footer_usecases_txt.getText();
 		Assert.assertEquals(actual_txt, "Use cases");
@@ -1427,7 +1430,7 @@ public class VdotokHome {
 	
 	public void verify_footer_shopping_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_shopping_btn));
 		String actual_txt1= footer_shopping_btn.getText();
 	    Assert.assertEquals(actual_txt1, "Live Shopping");
@@ -1443,7 +1446,7 @@ public class VdotokHome {
 	
 	public void verify_footer_medtech_btn()
     {
-		js.executeScript("window.scrollBy(0,7000)");
+		js.executeScript("window.scrollBy(0,7500)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_medtech_btn));
 		String actual_txt1= footer_medtech_btn.getText();
 	    Assert.assertEquals(actual_txt1, "MedTech");
@@ -1456,7 +1459,7 @@ public class VdotokHome {
 	    String actual_url = driver.getCurrentUrl();
 		Assert.assertEquals(actual_url, "https://vdotok.com/healthtech");		
 	}
-	/*public void verify_footer_network_btn()
+	public void verify_footer_network_btn()
     {
 		js.executeScript("window.scrollBy(0,7000)");
 		wait.until(ExpectedConditions.elementToBeClickable(footer_network_btn));
@@ -1471,14 +1474,119 @@ public class VdotokHome {
 	    String actual_url = driver.getCurrentUrl();
 		Assert.assertEquals(actual_url, "https://vdotok.com/healthtech");		
 	}
-	*/	
+	
 	
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div//div[@class=\"contactMainDiv contactfooterDiv\"]//div[@class=\"linkHead contactusmbl\"]") WebElement footer_ContactUs_txt;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div//div[@class=\"contactMainDiv contactfooterDiv\"]//p") WebElement footer_email_btn;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div[@class=\"footerUpDiv\"]//div[3]//div[@class=\"iconDiv\"]//div[1]//img") WebElement footer_facebook_img;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div[@class=\"footerUpDiv\"]//div[3]//div[@class=\"iconDiv\"]//div[2]//img") WebElement footer_insta_img;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div[@class=\"footerUpDiv\"]//div[3]//div[@class=\"iconDiv\"]//div[3]//img") WebElement footer_linkedIn_img;
+	
+	public void verify_footer_ContactUs_txt()
+	{
+		js.executeScript("window.scrollBy(0,7500)");
+		wait.until(ExpectedConditions.visibilityOf(footer_ContactUs_txt));
+		String actual_txt= footer_ContactUs_txt.getText();
+		Assert.assertEquals(actual_txt, "Contact us");
+    }
+	
+	public void verify_footer_email_btn()
+    {
+		js.executeScript("window.scrollBy(0,7500)");
+		wait.until(ExpectedConditions.elementToBeClickable(footer_email_btn));
+		String actual_txt1= footer_email_btn.getText();
+	    Assert.assertEquals(actual_txt1, "E-mail: info@vdotok.com");
+	    footer_medtech_btn.click();
+	}
+	
+	public void verify_footer_facebook_img()
+    {
+		js.executeScript("window.scrollBy(0,7500)");
+		wait.until(ExpectedConditions.visibilityOf(footer_facebook_img));
+		boolean Element_Present = footer_facebook_img.isDisplayed();
+		Assert.assertTrue(Element_Present);
+    }
+	
+	public void verify_footer_facebook_btn()
+    {
+		js.executeScript("window.scrollBy(0,7500)");
+		wait.until(ExpectedConditions.elementToBeClickable(footer_facebook_img));
+		footer_facebook_img.click();
+	    String winHandleBefore = driver.getWindowHandle();
+		for(String winHandle : driver.getWindowHandles())
+		{
+		    driver.switchTo().window(winHandle);
+		}
+	    String actual_url = driver.getCurrentUrl();
+		Assert.assertEquals(actual_url, "https://www.facebook.com/vdotok/");		
+	}
+
+	public void verify_footer_insta_img()
+    {
+		js.executeScript("window.scrollBy(0,7000)");
+		wait.until(ExpectedConditions.visibilityOf(footer_insta_img));
+		boolean Element_Present = footer_insta_img.isDisplayed();
+		Assert.assertTrue(Element_Present);
+    }
+	
+	public void verify_footer_insta_btn()
+    {
+		js.executeScript("window.scrollBy(0,7000)");
+		wait.until(ExpectedConditions.elementToBeClickable(footer_insta_img));
+		footer_insta_img.click();
+	    String winHandleBefore = driver.getWindowHandle();
+		for(String winHandle : driver.getWindowHandles())
+		{
+		    driver.switchTo().window(winHandle);
+		}
+	    String actual_url = driver.getCurrentUrl();
+		Assert.assertEquals(actual_url, "https://www.instagram.com/vdotok/");		
+	}
+	
+	public void verify_footer_linkedIn_img()
+    {
+		js.executeScript("window.scrollBy(0,7000)");
+		wait.until(ExpectedConditions.visibilityOf(footer_linkedIn_img));
+		boolean Element_Present = footer_linkedIn_img.isDisplayed();
+		Assert.assertTrue(Element_Present);
+    }
+	
+	public void verify_footer_linkedIn_btn()
+    {
+		js.executeScript("window.scrollBy(0,7000)");
+		wait.until(ExpectedConditions.elementToBeClickable(footer_linkedIn_img));
+		footer_linkedIn_img.click();
+	    String winHandleBefore = driver.getWindowHandle();
+		for(String winHandle : driver.getWindowHandles())
+		{
+		    driver.switchTo().window(winHandle);
+		}
+	    String actual_url = driver.getCurrentUrl();
+		Assert.assertEquals(actual_url, "https://www.linkedin.com/company/vdotok/");		
+	}	
+	
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div[@class=\"footerDownDiv\"]//p//img") WebElement footer_backToTop_imgBtn;
 	@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div[@class=\"footerDownDiv\"]//p[@class=\"footerBack\"]") WebElement footer_backToTop_txtBtn;
+	//@FindBy(xpath="//img[@id=\"vdtbrandlogo\"]") WebElement header_logo;
 	
+	public void verify_footer_backToTop_imgBtn()
+    {
+		js.executeScript("window.scrollBy(0,7000)");
+		wait.until(ExpectedConditions.elementToBeClickable(footer_backToTop_imgBtn));
+		footer_backToTop_imgBtn.click();
+		boolean logoPresent = header_logo.isDisplayed();
+		Assert.assertTrue(logoPresent);		
+	   		
+	}
+	
+	public void verify_footer_backToTop_txtBtn()
+    {
+		js.executeScript("window.scrollBy(0,7000)");
+		wait.until(ExpectedConditions.elementToBeClickable(footer_backToTop_txtBtn));
+		footer_backToTop_txtBtn.click();
+		boolean logoPresent = header_logo.isDisplayed();
+		Assert.assertTrue(logoPresent);		
+	   		
+	}
+		
 }
