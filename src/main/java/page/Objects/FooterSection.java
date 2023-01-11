@@ -67,7 +67,8 @@ public class FooterSection {
 		@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div//div[@class=\"newfooterclass\"]//div[1]//div[2]//a[4]") WebElement footer_FAQ_btn;
 		@FindBy(xpath="//div[@id=\"root\"]//div//div[@id=\"signup_container\"]//div[@id=\"modalmain-signup\"]//div[@id=\"navmodal-signup\"]//div[@class=\"login partition\"]//p[@class=\"heading-signin typekit_h3 webkit_primary_h\"]") WebElement signIn_title; 
 		@FindBy(xpath="//div[@class=\"paycontent\"]//p[1]") WebElement sec6_title_txt;
-		
+	    @FindBy(xpath="//div[@id=\"withimg\"]//div//img[@src=\"/static/media/x-circle.8b9fa0f0dd9200eb5d33.webp\"]") WebElement cancel_login;
+	    
 		public void verify_footer_vdotok_txt()
 		{
 			js.executeScript("window.scrollBy(0,7300)");
@@ -77,26 +78,28 @@ public class FooterSection {
 			log.info("vdotok text is displayed in the footer");
 	    }
 		
-		public void verify_footer_beta_btn()
+		public void verify_footer_beta_btn() throws InterruptedException
 	    {
 			//js.executeScript("window.scrollBy(0,7300)");
 			((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_beta_btn));
 			String actual_txt1= footer_beta_btn.getText();
 		    Assert.assertEquals(actual_txt1, "Try VdoTok Beta");
 		    footer_beta_btn.click();
 		    log.info("clicked on vdotok beta option in the footer");
-		    wait.until(ExpectedConditions.elementToBeClickable(signIn_title));
-		    log.info("Sign in pop up has been displayed on clicking the vdotok beta option in the footer");
-			signIn_title.click();
+		    wait.until(ExpectedConditions.elementToBeClickable(cancel_login));
+		    log.info("Sign up pop up has been displayed on clicking the vdotok beta option in the footer");
+		    cancel_login.click();
 						
 		}
 		
 		@FindBy(xpath="//div[@id=\"root\"]//div//div[@class=\"main_vision\"]//div//div//h2") WebElement our_vision_title;
 
-		public void verify_footer_about_btn()
+		public void verify_footer_about_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_about_btn));
 			String actual_txt1= footer_about_btn.getText();
 		    Assert.assertEquals(actual_txt1, "About");
@@ -109,9 +112,10 @@ public class FooterSection {
 				
 		}
 		
-		public void verify_footer_pricing_btn()
+		public void verify_footer_pricing_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_pricing_btn));
 			String actual_txt1= footer_pricing_btn.getText();
 		    Assert.assertEquals(actual_txt1, "Pricing");
@@ -124,9 +128,10 @@ public class FooterSection {
 				
 		}
 		
-		public void verify_footer_documentation_btn()
+		public void verify_footer_documentation_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_documentation_btn));
 			String actual_txt1= footer_documentation_btn.getText();
 		    Assert.assertEquals(actual_txt1, "Documentation");
@@ -142,9 +147,10 @@ public class FooterSection {
 			log.info("user has been navigated to the docs page on clicking Documentation option in the footer");
 		}	    
 		
-		public void verify_footer_FAQ_btn()
+		public void verify_footer_FAQ_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_FAQ_btn));
 			String actual_txt1= footer_FAQ_btn.getText();
 		    Assert.assertEquals(actual_txt1, "FAQ");
@@ -174,9 +180,10 @@ public class FooterSection {
 			log.info("Usecases displayed in the footer");
 	    }
 		
-		public void verify_footer_shopping_btn()
+		public void verify_footer_shopping_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_shopping_btn));
 			String actual_txt1= footer_shopping_btn.getText();
 		    Assert.assertEquals(actual_txt1, "Live Shopping");
@@ -192,9 +199,10 @@ public class FooterSection {
 			log.info("user has been navigated to the LIVE SHOPPING page on clicking LIVE SHOPPING option in the footer");
 		}
 		
-		public void verify_footer_medtech_btn()
+		public void verify_footer_medtech_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_medtech_btn));
 			String actual_txt1= footer_medtech_btn.getText();
 		    Assert.assertEquals(actual_txt1, "MedTech");
@@ -241,9 +249,10 @@ public class FooterSection {
 			log.info("contact us option displayed in the footer");
 	    }
 		
-		public void verify_footer_email_btn()
+		public void verify_footer_email_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_email_btn));
 			String actual_txt1= footer_email_btn.getText();
 		    Assert.assertEquals(actual_txt1, "E-mail: info@vdotok.com");
@@ -251,18 +260,20 @@ public class FooterSection {
 		    log.info("clicked on the email option in the footer");
 		}
 		
-		public void verify_footer_facebook_img()
+		public void verify_footer_facebook_img() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOf(footer_facebook_img));
 			boolean Element_Present = footer_facebook_img.isDisplayed();
 			Assert.assertTrue(Element_Present);
 			log.info("Facebook icon displayed in the footer");
 	    }
 		
-		public void verify_footer_facebook_btn()
+		public void verify_footer_facebook_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7500)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_facebook_img));
 			footer_facebook_img.click();
 			log.info("clicked on the facebook icon in the footer");
@@ -285,9 +296,10 @@ public class FooterSection {
 			log.info("instagram icon displayed in the footer");
 	    }
 		
-		public void verify_footer_insta_btn()
+		public void verify_footer_insta_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7000)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_insta_img));
 			footer_insta_img.click();
 			log.info("clicked on the instagram icon in the footer");
@@ -310,9 +322,10 @@ public class FooterSection {
 			log.info("linkedin icon displayed in the footer");
 	    }
 		
-		public void verify_footer_linkedIn_btn()
+		public void verify_footer_linkedIn_btn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7000)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_linkedIn_img));
 			footer_linkedIn_img.click();
 			log.info("clicked on the linkedin icon in the footer");
@@ -330,9 +343,10 @@ public class FooterSection {
 		@FindBy(xpath="//div[@id=\"root\"]//div[@class=\"footerMainDiv\"]//div[@class=\"footerDownDiv\"]//p[@class=\"footerBack\"]") WebElement footer_backToTop_txtBtn;
 		@FindBy(xpath="//img[@id=\"vdtbrandlogo\"]") WebElement header_logo;
 		
-		public void verify_footer_backToTop_imgBtn()
+		public void verify_footer_backToTop_imgBtn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7000)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_backToTop_imgBtn));
 			footer_backToTop_imgBtn.click();
 			log.info("clicked on the back to top icon in the footer");
@@ -342,9 +356,10 @@ public class FooterSection {
 		   		
 		}
 		
-		public void verify_footer_backToTop_txtBtn()
+		public void verify_footer_backToTop_txtBtn() throws InterruptedException
 	    {
 			js.executeScript("window.scrollBy(0,7000)");
+			Thread.sleep(2000);
 			wait.until(ExpectedConditions.elementToBeClickable(footer_backToTop_txtBtn));
 			footer_backToTop_txtBtn.click();
 			log.info("clicked on the back to top tet in the footer");

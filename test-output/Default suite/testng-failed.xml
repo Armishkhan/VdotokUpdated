@@ -5,7 +5,8 @@
     <classes>
       <class name="page.testcases.VdotokHomePageTest">
         <methods>
-          <include name="test_blog7_btn"/>
+          <include name="close"/>
+          <include name="test_footer_beta_btn"/>
           <include name="setup"/>
         </methods>
       </class> <!-- page.testcases.VdotokHomePageTest -->

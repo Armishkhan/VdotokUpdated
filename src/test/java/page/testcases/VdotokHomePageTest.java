@@ -805,60 +805,59 @@ public class VdotokHomePageTest {
 		sec10_obj.verify_footer_vdotok_txt();
 	}
 	
-	
 	@Test(priority=95)
-	public void test_footer_beta_btn()
+	public void test_footer_beta_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_beta_btn();
 	}
 	
 	@Test(priority=96)
-	public void test_footer_about_btn()
+	public void test_footer_about_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_about_btn();
 	}
 	
 	@Test(priority=97)
-	public void test_footer_pricing_btn()
+	public void test_footer_pricing_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_pricing_btn();
 	}
 	
 	@Test(priority=98)
-	public void test_footer_documentation_btn()
-	{ 
+	public void test_footer_documentation_btn() throws InterruptedException
+	{  
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_documentation_btn();
 	}
 	
 	@Test(priority=99)
-	public void test_footer_FAQ_btn()
+	public void test_footer_FAQ_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_FAQ_btn();
 	}
-	
+
 	//Test Footer Section3
 	
 	@Test(priority=100)
-	public void test_footer_usecases_txt()
+	public void test_footer_usecases_txt() 
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_usecases_txt();
 	}
 	
 	@Test(priority=101)
-	public void test_footer_shopping_btn()
+	public void test_footer_shopping_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_shopping_btn();
 	}
 	
 	@Test(priority=102)
-	public void test_footer_medtech_btn()
+	public void test_footer_medtech_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_medtech_btn();
@@ -874,21 +873,21 @@ public class VdotokHomePageTest {
 	}
 	
 	@Test(priority=104)
-	public void test_footer_email_btn()
+	public void test_footer_email_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_email_btn();
 	}
 	
 	@Test(priority=105)
-	public void test_footer_facebook_img()
+	public void test_footer_facebook_img() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_facebook_img();
 	}
 	
 	@Test(priority=106)
-	public void test_footer_facebook_btn()
+	public void test_footer_facebook_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_facebook_btn();
@@ -900,9 +899,9 @@ public class VdotokHomePageTest {
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_insta_img();
 	}
-	
+*/
 	@Test(priority=108)
-	public void test_footer_insta_btn()
+	public void test_footer_insta_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_insta_btn();
@@ -916,7 +915,7 @@ public class VdotokHomePageTest {
 	}
 	
 	@Test(priority=110)
-	public void test_footer_linkedIn_btn()
+	public void test_footer_linkedIn_btn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_linkedIn_btn();
@@ -925,25 +924,25 @@ public class VdotokHomePageTest {
 	//Test Back to Top
 	
 	@Test(priority=111)
-	public void test_footer_backToTop_imgBtn()
+	public void test_footer_backToTop_imgBtn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_backToTop_imgBtn();
 	}
 	
 	@Test(priority=112)
-	public void test_footer_backToTop_txtBtn()
+	public void test_footer_backToTop_txtBtn() throws InterruptedException
 	{ 
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_backToTop_txtBtn();
 	}
-		
+	
     @AfterMethod
     public void close()
     {
         driver.quit();
     }
-  */
+  
    
        		
 }
