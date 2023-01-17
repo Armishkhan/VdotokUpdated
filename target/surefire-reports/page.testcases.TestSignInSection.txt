@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: page.testcases.TestSignInSection
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 195.834 s - in page.testcases.TestSignInSection

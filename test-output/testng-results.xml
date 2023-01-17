@@ -1,73 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-11T19:31:48 PKT" name="Default suite" finished-at="2023-01-11T19:34:58 PKT" duration-ms="190138">
+  <suite started-at="2023-01-17T17:23:03 PKT" name="Default suite" finished-at="2023-01-17T17:23:21 PKT" duration-ms="18930">
     <groups>
     </groups>
-    <test started-at="2023-01-11T19:31:48 PKT" name="Default test" finished-at="2023-01-11T19:34:58 PKT" duration-ms="190138">
-      <class name="page.testcases.VdotokHomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:31:48 PKT" name="setup" finished-at="2023-01-11T19:31:50 PKT" duration-ms="2213" status="PASS">
+    <test started-at="2023-01-17T17:23:03 PKT" name="Default test" finished-at="2023-01-17T17:23:21 PKT" duration-ms="18930">
+      <class name="page.testcases.TestSignInSection">
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@59505b48]" started-at="2023-01-17T17:23:03 PKT" name="setup" finished-at="2023-01-17T17:23:05 PKT" duration-ms="2219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_footer_insta_btn()[pri:108, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:31:50 PKT" name="test_footer_insta_btn" finished-at="2023-01-11T19:32:22 PKT" duration-ms="31793" status="PASS">
+        <test-method signature="test_vdotok_logo()[pri:0, instance:page.testcases.TestSignInSection@59505b48]" started-at="2023-01-17T17:23:05 PKT" name="test_vdotok_logo" finished-at="2023-01-17T17:23:21 PKT" duration-ms="16567" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_footer_insta_btn -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:32:22 PKT" name="close" finished-at="2023-01-11T19:32:22 PKT" duration-ms="122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:32:22 PKT" name="setup" finished-at="2023-01-11T19:32:24 PKT" duration-ms="1637" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_footer_linkedIn_img()[pri:109, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:32:24 PKT" name="test_footer_linkedIn_img" finished-at="2023-01-11T19:32:49 PKT" duration-ms="25394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_footer_linkedIn_img -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:32:49 PKT" name="close" finished-at="2023-01-11T19:32:49 PKT" duration-ms="107" status="PASS">
+        </test-method> <!-- test_vdotok_logo -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@59505b48]" started-at="2023-01-17T17:23:21 PKT" name="close" finished-at="2023-01-17T17:23:21 PKT" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:32:49 PKT" name="setup" finished-at="2023-01-11T19:32:51 PKT" duration-ms="1692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_footer_linkedIn_btn()[pri:110, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:32:51 PKT" name="test_footer_linkedIn_btn" finished-at="2023-01-11T19:33:24 PKT" duration-ms="33544" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_footer_linkedIn_btn -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:33:24 PKT" name="close" finished-at="2023-01-11T19:33:25 PKT" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:33:25 PKT" name="setup" finished-at="2023-01-11T19:33:27 PKT" duration-ms="2663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_footer_backToTop_imgBtn()[pri:111, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:33:27 PKT" name="test_footer_backToTop_imgBtn" finished-at="2023-01-11T19:34:26 PKT" duration-ms="58161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_footer_backToTop_imgBtn -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:34:26 PKT" name="close" finished-at="2023-01-11T19:34:26 PKT" duration-ms="105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:34:26 PKT" name="setup" finished-at="2023-01-11T19:34:27 PKT" duration-ms="1609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_footer_backToTop_txtBtn()[pri:112, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:34:27 PKT" name="test_footer_backToTop_txtBtn" finished-at="2023-01-11T19:34:58 PKT" duration-ms="30644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_footer_backToTop_txtBtn -->
-        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.VdotokHomePageTest@72e5a8e]" started-at="2023-01-11T19:34:58 PKT" name="close" finished-at="2023-01-11T19:34:58 PKT" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- page.testcases.VdotokHomePageTest -->
+      </class> <!-- page.testcases.TestSignInSection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-17T16:55:35 PKT" name="Surefire suite" finished-at="2023-01-17T16:58:50 PKT" duration-ms="195412">
+    <groups>
+    </groups>
+    <test started-at="2023-01-17T16:55:35 PKT" name="Surefire test" finished-at="2023-01-17T16:58:50 PKT" duration-ms="195412">
+      <class name="page.testcases.TestSignInSection">
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:55:35 PKT" name="setup" finished-at="2023-01-17T16:55:37 PKT" duration-ms="2533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_vdotok_logo()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:55:37 PKT" name="test_vdotok_logo" finished-at="2023-01-17T16:55:51 PKT" duration-ms="13722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_vdotok_logo -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:55:51 PKT" name="close" finished-at="2023-01-17T16:55:51 PKT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:55:51 PKT" name="setup" finished-at="2023-01-17T16:55:53 PKT" duration-ms="1734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_signIn_txt()[pri:1, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:55:53 PKT" name="test_signIn_txt" finished-at="2023-01-17T16:56:02 PKT" duration-ms="9064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_signIn_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:02 PKT" name="close" finished-at="2023-01-17T16:56:02 PKT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:02 PKT" name="setup" finished-at="2023-01-17T16:56:04 PKT" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_descriptive_txt()[pri:2, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:04 PKT" name="test_descriptive_txt" finished-at="2023-01-17T16:56:12 PKT" duration-ms="8828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_descriptive_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:12 PKT" name="close" finished-at="2023-01-17T16:56:13 PKT" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:13 PKT" name="setup" finished-at="2023-01-17T16:56:14 PKT" duration-ms="1693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_email_field()[pri:3, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:14 PKT" name="test_email_field" finished-at="2023-01-17T16:56:24 PKT" duration-ms="9446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_email_field -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:24 PKT" name="close" finished-at="2023-01-17T16:56:24 PKT" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:24 PKT" name="setup" finished-at="2023-01-17T16:56:26 PKT" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_password_field()[pri:4, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:26 PKT" name="test_password_field" finished-at="2023-01-17T16:56:35 PKT" duration-ms="9360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_password_field -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:35 PKT" name="close" finished-at="2023-01-17T16:56:35 PKT" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:35 PKT" name="setup" finished-at="2023-01-17T16:56:37 PKT" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_password_type()[pri:5, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:37 PKT" name="test_password_type" finished-at="2023-01-17T16:56:47 PKT" duration-ms="10048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_password_type -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:47 PKT" name="close" finished-at="2023-01-17T16:56:47 PKT" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:47 PKT" name="setup" finished-at="2023-01-17T16:56:49 PKT" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_forgotPassword_option()[pri:6, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:56:49 PKT" name="test_forgotPassword_option" finished-at="2023-01-17T16:57:00 PKT" duration-ms="11466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_forgotPassword_option -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:00 PKT" name="close" finished-at="2023-01-17T16:57:00 PKT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:00 PKT" name="setup" finished-at="2023-01-17T16:57:02 PKT" duration-ms="1594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_PasswordVisibility_icon()[pri:7, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:02 PKT" name="test_PasswordVisibility_icon" finished-at="2023-01-17T16:57:16 PKT" duration-ms="13939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_PasswordVisibility_icon -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:16 PKT" name="close" finished-at="2023-01-17T16:57:16 PKT" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:16 PKT" name="setup" finished-at="2023-01-17T16:57:17 PKT" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_login_button()[pri:8, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:17 PKT" name="verify_login_button" finished-at="2023-01-17T16:57:43 PKT" duration-ms="25701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_button -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:43 PKT" name="close" finished-at="2023-01-17T16:57:43 PKT" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:43 PKT" name="setup" finished-at="2023-01-17T16:57:45 PKT" duration-ms="1763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_bottom_txt()[pri:9, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:57:45 PKT" name="test_bottom_txt" finished-at="2023-01-17T16:58:02 PKT" duration-ms="16750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_bottom_txt -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:02 PKT" name="close" finished-at="2023-01-17T16:58:02 PKT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:02 PKT" name="setup" finished-at="2023-01-17T16:58:04 PKT" duration-ms="1849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_cross_icon()[pri:10, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:04 PKT" name="test_cross_icon" finished-at="2023-01-17T16:58:27 PKT" duration-ms="23451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_cross_icon -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:27 PKT" name="close" finished-at="2023-01-17T16:58:27 PKT" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:27 PKT" name="setup" finished-at="2023-01-17T16:58:29 PKT" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_signIn_option()[pri:10, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:29 PKT" name="test_signIn_option" finished-at="2023-01-17T16:58:50 PKT" duration-ms="21027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_signIn_option -->
+        <test-method is-config="true" signature="close()[pri:0, instance:page.testcases.TestSignInSection@77e4c80f]" started-at="2023-01-17T16:58:50 PKT" name="close" finished-at="2023-01-17T16:58:50 PKT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- page.testcases.TestSignInSection -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

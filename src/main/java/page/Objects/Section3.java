@@ -1,4 +1,5 @@
 package page.Objects;
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -19,13 +20,13 @@ public class Section3 {
 	
 	public Section3(WebDriver driver)
 	{
+		BasicConfigurator.configure();
         this.driver = driver;
         PageFactory.initElements(driver, this); 
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         js = (JavascriptExecutor) driver;
         Actions actions = new Actions(driver); 
-        driver.get("http://vdotok.com");
-         
+        driver.get("http://vdotok.com");     
 	}
 
  	//section3

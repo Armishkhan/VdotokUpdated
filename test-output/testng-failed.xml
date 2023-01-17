@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="page.testcases.VdotokHomePageTest">
+      <class name="page.testcases.TestSignInSection">
         <methods>
           <include name="close"/>
-          <include name="test_footer_beta_btn"/>
           <include name="setup"/>
+          <include name="verify_login_button"/>
         </methods>
-      </class> <!-- page.testcases.VdotokHomePageTest -->
+      </class> <!-- page.testcases.TestSignInSection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
