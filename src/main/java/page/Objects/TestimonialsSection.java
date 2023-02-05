@@ -17,7 +17,7 @@ public class TestimonialsSection {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
-	static Logger log = Logger.getLogger(VdotokHome.class.getName());
+	static Logger log = Logger.getLogger(TestimonialsSection.class.getName());
 
 	public TestimonialsSection(WebDriver driver) {
 		BasicConfigurator.configure();

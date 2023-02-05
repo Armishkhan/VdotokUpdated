@@ -17,7 +17,7 @@ public class Section1 {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
-	static Logger log = Logger.getLogger(VdotokHome.class.getName());
+	static Logger log = Logger.getLogger(Section1.class.getName());
 
 	public Section1(WebDriver driver) {
 		BasicConfigurator.configure();

@@ -17,7 +17,7 @@ public class ImageSection {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
-	static Logger log = Logger.getLogger(VdotokHome.class.getName());
+	static Logger log = Logger.getLogger(ImageSection.class.getName());
 
 	public ImageSection(WebDriver driver) {
 		BasicConfigurator.configure();

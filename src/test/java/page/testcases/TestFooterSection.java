@@ -6,26 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import browsers.browser_setup;
 import page.Objects.FooterSection;
 
-public class TestFooterSection {
-
-	WebDriver driver;
-	String driverPath = "/usr/local/bin/chromedriver";
-
-	@BeforeMethod
-
-	public void setup() {
-
-		System.setProperty("webdriver.chromedriver.driver", driverPath);
-
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.manage().window().maximize();
-
-	}
+public class TestFooterSection extends browser_setup {
 
 	// Test Footer Section1
 
@@ -167,11 +152,6 @@ public class TestFooterSection {
 	public void test_footer_backToTop_txtBtn() throws InterruptedException {
 		FooterSection sec10_obj = new FooterSection(driver);
 		sec10_obj.verify_footer_backToTop_txtBtn();
-	}
-
-	@AfterMethod
-	public void close() {
-		driver.quit();
 	}
 
 }

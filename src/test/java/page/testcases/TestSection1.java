@@ -6,24 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import browsers.browser_setup;
 import page.Objects.Section1;
 
-public class TestSection1 {
-
-	WebDriver driver;
-	String driverPath = "/usr/local/bin/chromedriver";
-
-	@BeforeMethod
-
-	public void setup() {
-		System.setProperty("webdriver.chromedriver.driver", driverPath);
-
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.manage().window().maximize();
-	}
+public class TestSection1 extends browser_setup {
 
 	////////////////////////////////////////////////////////// TEST SECTION-1 ////////////////////////////////////////////////////////////
 
@@ -100,11 +87,6 @@ public class TestSection1 {
 	public void test_sec1_img() {
 		Section1 sec1_obj = new Section1(driver);
 		sec1_obj.verify_sec1_img();
-	}
-
-	@AfterMethod
-	public void close() {
-		driver.quit();
 	}
 
 }

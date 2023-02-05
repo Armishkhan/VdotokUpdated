@@ -17,7 +17,7 @@ public class SignInSection {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
-	static Logger log = Logger.getLogger(VdotokHome.class.getName());
+	static Logger log = Logger.getLogger(SignInSection.class.getName());
 
 	public SignInSection(WebDriver driver) {
 		BasicConfigurator.configure();
@@ -73,8 +73,10 @@ public class SignInSection {
 	
 	@FindBy(xpath="//div[@id=\"navmodal-signup\"]//p[@class=\"heading-signup typekit_h3 webkit_primary_h\"]")
 	WebElement signUp_title;
-	
-	
+
+	@FindBy(xpath="//p[@class=\"profileName\"]")
+	WebElement profile_name;
+		
 	public void verify_vdotok_logo() {
 		wait.until(ExpectedConditions.visibilityOf(login_button));
 		login_button.click();
@@ -118,7 +120,7 @@ public class SignInSection {
 		wait.until(ExpectedConditions.visibilityOf(password_label));
 		Assert.assertEquals(password_label.getText(), "Password");
 		wait.until(ExpectedConditions.visibilityOf(password_input_field));
-		email_input_field.sendKeys(password);
+		password_input_field.sendKeys(password);
 		log.info("entered password");
 	}
 	
@@ -126,7 +128,7 @@ public class SignInSection {
 		wait.until(ExpectedConditions.visibilityOf(login_button));
 		login_button.click();
 		wait.until(ExpectedConditions.visibilityOf(password_input_field));
-		email_input_field.sendKeys(password);
+		password_input_field.sendKeys(password);
 		log.info("entered password");
 		log.info("Verifying that the entered password is masked");
 		String value = password_input_field.getAttribute("type");
@@ -155,8 +157,8 @@ public class SignInSection {
 		wait.until(ExpectedConditions.visibilityOf(login_button));
 		login_button.click();
 		wait.until(ExpectedConditions.visibilityOf(password_input_field));
-		email_input_field.sendKeys(password);
-		wait.until(ExpectedConditions.visibilityOf(forgot_password_option));
+		password_input_field.sendKeys(password);
+		wait.until(ExpectedConditions.visibilityOf(password_visibility_icon));
 		password_visibility_icon.click();
 		String value = password_input_field.getAttribute("type");
 		if (value.equals("text"))
@@ -166,28 +168,18 @@ public class SignInSection {
 		else 
 			Assert.assertTrue(false);
 	}
-	
-	public void verify_login_button(String username, String password) throws InterruptedException {	
+
+	public void verify_login_button(String email, String password) throws InterruptedException {	
 		wait.until(ExpectedConditions.visibilityOf(login_button));
 		login_button.click();
 		wait.until(ExpectedConditions.visibilityOf(email_input_field));
 		wait.until(ExpectedConditions.visibilityOf(password_input_field));
-		wait.until(ExpectedConditions.visibilityOf(LOGIN_button));
-		email_input_field.sendKeys(username);
+		email_input_field.sendKeys(email);
 		password_input_field.sendKeys(password);
+		wait.until(ExpectedConditions.elementToBeClickable(LOGIN_button));
 		LOGIN_button.click();
-		Thread.sleep(3000);
-		String winHandleBefore = driver.getWindowHandle();
-		for (String winHandle : driver.getWindowHandles()) 
-		{
-			driver.switchTo().window(winHandle);
-		}
-		String actual_url = driver.getCurrentUrl();
-		Assert.assertEquals(actual_url, "https://console.vdotok.com/overview");
-		log.info("user logged in successfully");
-		/*String actualUrl="https://console.vdotok.com/overview";
-		String expectedUrl= driver.getCurrentUrl();
-		Assert.assertEquals(expectedUrl,actualUrl);*/
+		wait.until(ExpectedConditions.visibilityOf(profile_name));
+		Assert.assertTrue(profile_name.isDisplayed());
 	}
 	
 	public void verify_bottom_txt() {	

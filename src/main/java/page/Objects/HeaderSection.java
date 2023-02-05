@@ -17,7 +17,7 @@ public class HeaderSection {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
-	static Logger log = Logger.getLogger(VdotokHome.class.getName());
+	static Logger log = Logger.getLogger(HeaderSection.class.getName());
 
 	public HeaderSection(WebDriver driver) {
 		BasicConfigurator.configure();
@@ -74,6 +74,7 @@ public class HeaderSection {
 	// Click on UseCases Option
 	public void verify_usecases_option() {
 		String expected_title = "Use Cases";
+		wait.until(ExpectedConditions.elementToBeClickable(usecases_option));
 		String actual_title = usecases_option.getText();
 		Assert.assertEquals(actual_title, expected_title);
 		wait.until(ExpectedConditions.elementToBeClickable(usecases_option));

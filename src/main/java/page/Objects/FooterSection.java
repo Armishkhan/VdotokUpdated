@@ -17,7 +17,7 @@ public class FooterSection {
 	WebDriver driver;
 	WebDriverWait wait;
 	JavascriptExecutor js;
-	static Logger log = Logger.getLogger(VdotokHome.class.getName());
+	static Logger log = Logger.getLogger(FooterSection.class.getName());
 
 	public FooterSection(WebDriver driver) {
 		BasicConfigurator.configure();
@@ -95,7 +95,7 @@ public class FooterSection {
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.elementToBeClickable(footer_beta_btn));
 		String actual_txt1 = footer_beta_btn.getText();
-		Assert.assertEquals(actual_txt1, "Try VdoTok Beta");
+		Assert.assertEquals(actual_txt1, "Try VdoTok Console");
 		footer_beta_btn.click();
 		log.info("clicked on vdotok beta option in the footer");
 		wait.until(ExpectedConditions.elementToBeClickable(cancel_login));

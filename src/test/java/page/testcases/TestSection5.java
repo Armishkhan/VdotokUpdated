@@ -7,23 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import browsers.browser_setup;
 import page.Objects.Section5;
 
-public class TestSection5 {
-
-	WebDriver driver;
-	String driverPath = "/usr/local/bin/chromedriver";
-
-	@BeforeMethod
-	public void setup() {
-		System.setProperty("webdriver.chromedriver.driver", driverPath);
-
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.manage().window().maximize();
-	}
+public class TestSection5 extends browser_setup {
 
 	////////////////////////////////////////////////////////// TEST SECTION-5 ////////////////////////////////////////////////////////// 
 
@@ -119,11 +107,6 @@ public class TestSection5 {
 	public void test_card4_Btmimg() {
 		Section5 sec5_obj = new Section5(driver);
 		sec5_obj.verify_card4_Btmimg();
-	}
-
-	@AfterMethod
-	public void close() {
-		driver.quit();
 	}
 
 }

@@ -6,24 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import browsers.browser_setup;
 import page.Objects.TestimonialsSection;
 
-public class TestTestimonialsSection {
-
-	WebDriver driver;
-	String driverPath = "/usr/local/bin/chromedriver";
-
-	@BeforeMethod
-	public void setup() {
-
-		System.setProperty("webdriver.chromedriver.driver", driverPath);
-
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.manage().window().maximize();
-	}
+public class TestTestimonialsSection extends browser_setup {
 
     //////////////////////////////////////////////////////////TEST TESTIMONIALS SECTION /////////////////////////////////////////////////////////////////////
 
@@ -73,11 +60,6 @@ public class TestTestimonialsSection {
 	public void test_testimonial_card2_txt() {
 		TestimonialsSection testimonial_obj = new TestimonialsSection(driver);
 		testimonial_obj.verify_testimonial_card2_txt();
-	}
-
-	@AfterMethod
-	public void close() {
-		driver.quit();
 	}
 
 }

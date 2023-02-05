@@ -1,6 +1,9 @@
 package page.testcases;
 
 import org.testng.annotations.Test;
+
+import browsers.browser_setup;
+
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver; 
 import org.openqa.selenium.chrome.ChromeDriver; 
@@ -8,24 +11,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod; 
 import page.Objects.SignInSection;
 
-public class TestSignInSection {
+public class TestSignInSection extends browser_setup {
 
-	WebDriver driver;
-	String driverPath = "/usr/local/bin/chromedriver";
-
-	@BeforeMethod
-
-	public void setup() {
-
-		System.setProperty("webdriver.chromedriver.driver", driverPath);
-
-		driver = new ChromeDriver();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.manage().window().maximize();
-	}
-	
 	@Test(priority = 0)
 	public void test_vdotok_logo() {
 		SignInSection signin_obj = new SignInSection(driver);
@@ -67,7 +54,7 @@ public class TestSignInSection {
 		SignInSection signin_obj = new SignInSection(driver);
 		signin_obj.verify_forgotPassword_option();
 	}
-	
+
 	@Test(priority = 7)
 	public void test_PasswordVisibility_icon() {
 		SignInSection signin_obj = new SignInSection(driver);
@@ -75,7 +62,7 @@ public class TestSignInSection {
 	}
 	
 	@Test(priority = 8)
-	public void verify_login_button() throws InterruptedException {
+	public void test_login_button() throws InterruptedException {
 		SignInSection signin_obj = new SignInSection(driver);
 		signin_obj.verify_login_button("k164080@nu.edu.pk", "Armish1234$");
 	}
@@ -96,11 +83,6 @@ public class TestSignInSection {
 	public void test_cross_icon() {
 		SignInSection signin_obj = new SignInSection(driver);
 		signin_obj.verify_cross_icon();
-	}
-	
-	@AfterMethod
-	public void close() {
-		driver.quit();
 	}
 
 }
